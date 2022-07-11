@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{09CD9F81-371C-46F5-8356-0FF3D1FB485F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{9E3BF977-3E89-4BC7-8A3D-2FDE6B1DDDDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CD9F81-371C-46F5-8356-0FF3D1FB485F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CD9F81-371C-46F5-8356-0FF3D1FB485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CD9F81-371C-46F5-8356-0FF3D1FB485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CD9F81-371C-46F5-8356-0FF3D1FB485F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3BF977-3E89-4BC7-8A3D-2FDE6B1DDDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3BF977-3E89-4BC7-8A3D-2FDE6B1DDDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3BF977-3E89-4BC7-8A3D-2FDE6B1DDDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3BF977-3E89-4BC7-8A3D-2FDE6B1DDDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
