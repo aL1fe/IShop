@@ -22,3 +22,6 @@ public class AppDbContext: DbContext
         optionsBuilder.UseSqlServer(connectionString);
     }
 }
+
+// dotnet ef migrations add Init -p DataAccessLayer -s Gateway
+// dotnet ef database update -p DataAccessLayer -s Gateway
