@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer;
+using ServiceLayer.DTO;
 
 namespace Gateway.Controllers;
 
@@ -14,11 +15,27 @@ public class ProductController: ControllerBase
     }
     
     [HttpGet]
-    [Route("/GetAllProducts")]
-    public  ActionResult<string> GetAllProductNames()
+    [Route("/GetAllProductNames")]
+    public ActionResult<string> GetAllProductNames()
     {
         var productNames = _productServices.GetAllProductNames();
-        return Ok(productNames);
+        if (productNames != null)
+        {
+            return Ok(productNames);
+        }
+        return NotFound("Products not found");
+    }
+
+    [HttpGet]
+    [Route("/GetAllProducts")]
+    public ActionResult<DtoProductNamePrice> GetAllProducts()
+    {
+        var products = _productServices.GetAllProducts();
+        if (products != null)
+        {
+            return Ok(products);
+        }
+        return NotFound("Products not found");
     }
 
     // [HttpPost]
